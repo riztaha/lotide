@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function(a, b) {
-  console.log(a,b);
+//  console.log(a,b);
   if (a.length !== b.length) {
     return false;
   }
@@ -19,6 +19,8 @@ const eqArrays = function(a, b) {
   }
   return true;
 }
+
+
 
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true) // => true
