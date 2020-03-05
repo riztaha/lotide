@@ -25,4 +25,4 @@ const countLetters = function (str) {
 }
 
 countLetters("lighthouse in the house")
-assertEqual(countLetters("aa", { a: 2 }))
+assertEqual(countLetters(("aa"), { a: 2 }))   //Why is this assertion passing, but the actual value not passing???
