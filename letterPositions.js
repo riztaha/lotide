@@ -39,5 +39,6 @@ const letterPositions = function(sentence) {
 console.log(letterPositions("hello"))
 
 assertArraysEqual(letterPositions("hhh"), { h: [0, 1, 2] })
+assertArraysEqual(letterPositions("hello").e, [1])
 
 // Mental Map: Create an empty object, for every letter in the sentence, if is it not a space, create an object with values that are arrays
