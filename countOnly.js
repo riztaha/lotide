@@ -7,6 +7,7 @@
 // We have to view through the object and look for the trues
 // We have to vew through the array and see how many trues exists
 
+//Assert Equal Function
 let emoji = String.fromCodePoint(128512);
 
 const assertEqual = function(actual, expected) {

@@ -12,7 +12,8 @@ const assertEqual = function(actual, expected) {
 const countLetters = function (str) {
   let result = {}
   for (const char of str) {
-    if (char !== " ") {          //Want to remove spaces .. how do I remove the space?
+    if (char !== " ") {         //Want to remove spaces .. how do I remove the space?.. let's not remove them, 
+                                //let's just skip them!!
       //console.log(result[char]) 
       if (result[char]) {
         result[char] += 1                       //if char repeats, add value 1 to the key ... why is this only adding 1
