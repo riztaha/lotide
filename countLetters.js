@@ -9,21 +9,21 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function (str) {
-  let result = {}
+const countLetters = function(str) {
+  let result = {};
   for (const char of str) {
-    if (char !== " ") {         //Want to remove spaces .. how do I remove the space?.. let's not remove them, 
-                                //let's just skip them!!
-      //console.log(result[char]) 
+    if (char !== " ") {         //Want to remove spaces .. how do I remove the space?.. let's not remove them,
+      //let's just skip them!!
+      //console.log(result[char])
       if (result[char]) {
-        result[char] += 1                       //if char repeats, add value 1 to the key ... why is this only adding 1
+        result[char] += 1;                       //if char repeats, add value 1 to the key ... why is this only adding 1
       } else {
-        result[char] = 1                         //if char displays once, value should only be 1
+        result[char] = 1;                         //if char displays once, value should only be 1
       }
     }
   }
-  console.log(result)
-}
+  console.log(result);
+};
 
-countLetters("lighthouse in the house")
-assertEqual(countLetters(("aa"), { a: 2 }))   //Why is this assertion passing, but the actual value not passing???
+countLetters("lighthouse in the house");
+assertEqual(countLetters(("aa"), { a: 2 }));   //Why is this assertion passing, but the actual value not passing???

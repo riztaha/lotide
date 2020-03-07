@@ -7,17 +7,18 @@ const assertEqual = function(actual, expected) {
   } else {
     console.log(`Assertion Failed: [${actual}] !== [${expected}]`);
   }
-}; 
+};
 
 
-const head = function(arr){
+const head = function(arr) {
   if (arr.length === 1) {
-    return arr
+    return arr;
   } else if (arr.length > 1) {
-    return arr[0]
+    return arr[0];
+  } else {
+    return "undefined";
   }
-  else { return "undefined" }
-}
+};
 
 
 
@@ -25,4 +26,4 @@ const head = function(arr){
 assertEqual(head([5,6,7]), 5); //pass
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"); //pass
 assertEqual(head([1,2,3]), 5); //should fail
-assertEqual(head([]), 5); //should return undefined 
+assertEqual(head([]), 5); //should return undefined

@@ -18,8 +18,8 @@ const assertEqual = function(actual, expected) {
   }
 };
 
- // countOnly.....
- // allItems: an array of strings that we need to look through
+// countOnly.....
+// allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
 //const object = person["firstName"]
 
@@ -27,19 +27,19 @@ const countOnly = function(allItems, itemsToCount) {
   let result = {};
   for (const i of allItems) {
     if (itemsToCount[i]) {
-      console.log(i)
-    if (result[i]) {
-      result[i] += 1;
-    } else {
-      result[i] = 1;
+      console.log(i);
+      if (result[i]) {
+        result[i] += 1;
+      } else {
+        result[i] = 1;
+      }
     }
-  }
     // if (Object.keys(itemsToCount) === i) {
     //   result[i] += 1
     // }
   }
-  return result
-}
+  return result;
+};
 
 
 
