@@ -1,11 +1,13 @@
-let emoji = String.fromCodePoint(128512);
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(emoji + ' ' + emoji + ' ' + emoji + ` Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`Assertion Failed: [${actual}] !== [${expected}]`);
-  }
-};
+// let emoji = String.fromCodePoint(128512);
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(emoji + ' ' + emoji + ' ' + emoji + ` Assertion Passed: [${actual}] === [${expected}]`);
+//   } else {
+//     console.log(`Assertion Failed: [${actual}] !== [${expected}]`);
+//   }
+// };
+
+const assertEqual = require('./assertEqual');
 
 const eqArrays = function(a, b) {
   console.log(a,b);
@@ -21,10 +23,12 @@ const eqArrays = function(a, b) {
 };
 
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
+// assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
 
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+
+module.exports = eqArrays
