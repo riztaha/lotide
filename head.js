@@ -4,12 +4,10 @@ const assertEqual = require('./assertEqual');
 
 
 const head = function(arr) {
-  if (arr.length === 1) {
-    return arr;
-  } else if (arr.length > 1) {
+  if (arr.length) {
     return arr[0];
   } else {
-    return "undefined";
+    return undefined;
   }
 };
 
