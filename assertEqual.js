@@ -1,6 +1,7 @@
 // FUNCTION IMPLEMENTATION
 let emoji = String.fromCodePoint(128512);
 
+//
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(emoji + ' ' + emoji + ' ' + emoji + ` Assertion Passed: [${actual}] === [${expected}]`);
@@ -9,6 +10,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+// TEST CODE has been removed and added to assertEqualTest.js file.
+
+module.exports = assertEqual
